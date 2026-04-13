@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "ifmup:processing_addon_tier_4"
+    }
+  ],
+  "type": "industrialforegoing:dissolution_chamber",
+  "input": [
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "tag": "c:gear/netherite"
+    },
+    {
+      "tag": "c:gear/netherite"
+    },
+    {
+      "item": "minecraft:furnace"
+    },
+    {
+      "item": "minecraft:crafting_table"
+    }
+  ],
+  "inputFluid": {
+    "amount": 1000,
+    "fluid": "industrialforegoing:latex"
+  },
+  "output": {
+    "components": {
+      "titanium:augments": {
+        "Processing": 5.0
+      }
+    },
+    "count": 1,
+    "id": "ifmup:processing_addon_tier_4"
+  },
+  "processingTime": 300
+}

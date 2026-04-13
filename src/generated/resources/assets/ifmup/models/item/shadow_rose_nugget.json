@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ifmup:item/material/shadow_rose/shadow_rose_nugget"
+  }
+}

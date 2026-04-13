@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ifmup:item/material/star_ether_alloy/star_ether_alloy_nugget"
+  }
+}

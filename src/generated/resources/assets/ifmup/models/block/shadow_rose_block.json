@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ifmup:block/material/shadow_rose/shadow_rose_block"
+  }
+}

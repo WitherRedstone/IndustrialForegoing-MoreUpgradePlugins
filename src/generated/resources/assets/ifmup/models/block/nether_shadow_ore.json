@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ifmup:block/material/shadow/nether_shadow_ore"
+  }
+}

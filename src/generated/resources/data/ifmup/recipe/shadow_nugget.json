@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingot/shadow"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ifmup:shadow_nugget"
+  }
+}

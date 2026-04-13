@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ifmup:item/material/shadow/shadow_rod"
+  }
+}

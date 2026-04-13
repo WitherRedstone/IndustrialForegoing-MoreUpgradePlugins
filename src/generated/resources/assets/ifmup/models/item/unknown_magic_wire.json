@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ifmup:item/material/unknown_magic/unknown_magic_wire"
+  }
+}

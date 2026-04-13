@@ -1,0 +1,20 @@
+{
+  "values": [
+    "ifmup:shadow_helmet",
+    "ifmup:shadow_chestplate",
+    "ifmup:shadow_leggings",
+    "ifmup:shadow_boots",
+    "ifmup:unknown_magic_helmet",
+    "ifmup:unknown_magic_chestplate",
+    "ifmup:unknown_magic_leggings",
+    "ifmup:unknown_magic_boots",
+    "ifmup:shadow_rose_helmet",
+    "ifmup:shadow_rose_chestplate",
+    "ifmup:shadow_rose_leggings",
+    "ifmup:shadow_rose_boots",
+    "ifmup:star_ether_alloy_helmet",
+    "ifmup:star_ether_alloy_chestplate",
+    "ifmup:star_ether_alloy_leggings",
+    "ifmup:star_ether_alloy_boots"
+  ]
+}

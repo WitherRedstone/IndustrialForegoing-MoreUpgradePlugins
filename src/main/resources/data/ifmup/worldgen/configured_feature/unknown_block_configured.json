@@ -1,0 +1,16 @@
+{
+  "type": "ifmup:configurable_ore",
+  "config": {
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:end_stone"
+        },
+        "state": {
+          "Name": "ifmup:unknown_block"
+        }
+      }
+    ]
+  }
+}

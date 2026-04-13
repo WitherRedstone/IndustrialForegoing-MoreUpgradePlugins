@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ifmup:block/material/star_ether_alloy/star_ether_alloy_block"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "tag": "c:ingot/unknown_magic"
+    },
+    "B": {
+      "tag": "c:rod/unknown_magic"
+    }
+  },
+  "pattern": [
+    " A ",
+    " A ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ifmup:unknown_magic_sword"
+  }
+}

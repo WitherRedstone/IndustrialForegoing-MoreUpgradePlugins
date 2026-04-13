@@ -1,0 +1,24 @@
+{
+  "values": [
+    "ifmup:shadow_sword",
+    "ifmup:shadow_pickaxe",
+    "ifmup:shadow_axe",
+    "ifmup:shadow_shovel",
+    "ifmup:shadow_hoe",
+    "ifmup:unknown_magic_sword",
+    "ifmup:unknown_magic_pickaxe",
+    "ifmup:unknown_magic_axe",
+    "ifmup:unknown_magic_shovel",
+    "ifmup:unknown_magic_hoe",
+    "ifmup:shadow_rose_sword",
+    "ifmup:shadow_rose_pickaxe",
+    "ifmup:shadow_rose_axe",
+    "ifmup:shadow_rose_shovel",
+    "ifmup:shadow_rose_hoe",
+    "ifmup:star_ether_alloy_sword",
+    "ifmup:star_ether_alloy_pickaxe",
+    "ifmup:star_ether_alloy_axe",
+    "ifmup:star_ether_alloy_shovel",
+    "ifmup:star_ether_alloy_hoe"
+  ]
+}

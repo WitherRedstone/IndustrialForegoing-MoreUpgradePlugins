@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ifmup:shadow_block",
+    "ifmup:raw_shadow_block",
+    "ifmup:unknown_magic_block",
+    "ifmup:shadow_rose_block",
+    "ifmup:star_ether_alloy_block"
+  ]
+}

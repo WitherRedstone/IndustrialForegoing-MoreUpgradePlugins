@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ingot/shadow_rose": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingot/shadow_rose"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ifmup:shadow_rose_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ingot/shadow_rose"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ifmup:shadow_rose_axe"
+    ]
+  }
+}

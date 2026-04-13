@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ifmup:block/unknown_magic_block"
+    }
+  }
+}

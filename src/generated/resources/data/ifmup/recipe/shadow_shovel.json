@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "tag": "c:ingot/shadow"
+    },
+    "B": {
+      "tag": "c:rod/shadow"
+    }
+  },
+  "pattern": [
+    " A ",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ifmup:shadow_shovel"
+  }
+}

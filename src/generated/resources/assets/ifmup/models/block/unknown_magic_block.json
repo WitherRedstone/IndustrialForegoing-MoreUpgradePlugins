@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ifmup:block/material/unknown_magic/unknown_magic_block"
+  }
+}

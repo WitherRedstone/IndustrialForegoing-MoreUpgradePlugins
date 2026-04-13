@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ifmup:item/tools/star_ether_alloy_hoe"
+  }
+}
