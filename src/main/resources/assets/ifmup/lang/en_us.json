@@ -12,6 +12,7 @@
   "item.ifmup.shadow_rod": "Shadow Rod",
   "item.ifmup.shadow_wire": "Shadow Wire",
   "item.ifmup.raw_shadow": "Raw Shadow",
+  "item.ifmup.raw_shadow.tooltip": "Spawns in small amounts in the Nether.",
   "block.ifmup.shadow_block": "Shadow Block",
   "block.ifmup.raw_shadow_block": "Raw Shadow Block",
   "block.ifmup.nether_shadow_ore": "Nether Shadow Ore",
@@ -26,7 +27,9 @@
   "item.ifmup.shadow_boots": "Shadow Boots",
 
   "item.ifmup.unknown_dust": "Unknown Dust",
+  "item.ifmup.unknown_dust.tooltip": "Drops when mining Unknown Block.",
   "block.ifmup.unknown_block": "Unknown Block",
+  "item.ifmup.unknown_block.tooltip": "Spawns in small amounts in the End.",
   "item.ifmup.unknown_magic_ingot": "Unknown Magic Ingot",
   "item.ifmup.unknown_magic_nugget": "Unknown Magic Nugget",
   "item.ifmup.unknown_magic_gear": "Unknown Magic Gear",

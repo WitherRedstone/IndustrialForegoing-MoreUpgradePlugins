@@ -20,7 +20,7 @@ public class ServerConfig {
         BUILDER.push("Unknown Magic Block Generation");
         UNKNOWN_BLOCK_VEIN_COUNT = BUILDER
                 .comment("每个区块的矿脉数量", "Number of veins per chunk")
-                .defineInRange("veinCount", 32, 0, 64);
+                .defineInRange("veinCount", 16, 0, 64);
         UNKNOWN_BLOCK_VEIN_SIZE = BUILDER
                 .comment("最大矿脉大小", "Maximum vein size")
                 .defineInRange("veinSize", 8, 1, 64);
