@@ -24,11 +24,13 @@ public class ModTooltips {
             tooltip.add(Component.translatable("item.ifmup.unknown_dust.tooltip")
                     .withStyle(ChatFormatting.GREEN));
         }
+
         // 未知块
         if (stack.getItem() == ModBlocks.UNKNOWN_BLOCK.get().asItem()) {
             tooltip.add(Component.translatable("item.ifmup.unknown_block.tooltip")
                     .withStyle(ChatFormatting.GREEN));
         }
+
         // 粗暗影矿
         if (stack.getItem() == ModItems.SHADOW.RAW.get()) {
             tooltip.add(Component.translatable("item.ifmup.raw_shadow.tooltip")
