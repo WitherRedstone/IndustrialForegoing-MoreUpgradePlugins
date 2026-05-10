@@ -3,10 +3,10 @@
   "category": "equipment",
   "key": {
     "A": {
-      "tag": "c:ingot/unknown_magic"
+      "tag": "c:ingots/unknown_magic"
     },
     "B": {
-      "tag": "c:rod/unknown_magic"
+      "tag": "c:rods/unknown_magic"
     }
   },
   "pattern": [

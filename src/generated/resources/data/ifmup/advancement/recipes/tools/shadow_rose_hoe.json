@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot/shadow_rose": {
+    "has_ingots/shadow_rose": {
       "conditions": {
         "items": [
           {
-            "items": "#c:ingot/shadow_rose"
+            "items": "#c:ingots/shadow_rose"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ingot/shadow_rose"
+      "has_ingots/shadow_rose"
     ]
   ],
   "rewards": {

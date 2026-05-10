@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:gear/unknown_magic"
+            "items": "#c:gears/unknown_magic"
           }
         ]
       },

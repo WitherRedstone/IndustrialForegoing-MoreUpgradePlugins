@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:ingot/unknown_magic"
+            "items": "#c:ingots/unknown_magic"
           }
         ]
       },

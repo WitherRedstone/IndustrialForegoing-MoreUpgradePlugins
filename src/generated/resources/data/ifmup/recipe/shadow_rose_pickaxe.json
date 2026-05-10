@@ -3,10 +3,10 @@
   "category": "equipment",
   "key": {
     "A": {
-      "tag": "c:ingot/shadow_rose"
+      "tag": "c:ingots/shadow_rose"
     },
     "B": {
-      "tag": "c:rod/shadow_rose"
+      "tag": "c:rods/shadow_rose"
     }
   },
   "pattern": [

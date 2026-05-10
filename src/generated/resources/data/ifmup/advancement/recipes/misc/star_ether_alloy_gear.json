@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:gear/star_ether_alloy"
+            "items": "#c:gears/star_ether_alloy"
           }
         ]
       },

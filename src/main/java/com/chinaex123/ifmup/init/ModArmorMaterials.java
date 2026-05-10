@@ -25,28 +25,28 @@ public class ModArmorMaterials {
         map.put(ArmorItem.Type.LEGGINGS, 6); // 护腿
         map.put(ArmorItem.Type.CHESTPLATE, 8); // 盔甲
         map.put(ArmorItem.Type.HELMET, 3); // 头盔
-    }), 8, SoundEvents.ARMOR_EQUIP_NETHERITE, 2.5F, 0.0F, () -> Ingredient.of(ModItemTags.INGOT_SHADOW));
+    }), 8, SoundEvents.ARMOR_EQUIP_NETHERITE, 2.5F, 0.0F, () -> Ingredient.of(ModItemTags.INGOTS_SHADOW));
     // 未知魔法
     public static final Holder<ArmorMaterial> UNKNOWN_MAGIC = register("unknown_magic", Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 4); // 靴子
         map.put(ArmorItem.Type.LEGGINGS, 7); // 护腿
         map.put(ArmorItem.Type.CHESTPLATE, 9); // 盔甲
         map.put(ArmorItem.Type.HELMET, 4); // 头盔
-    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.05F, () -> Ingredient.of(ModItemTags.INGOT_UNKNOWN_MAGIC));
+    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.05F, () -> Ingredient.of(ModItemTags.INGOTS_UNKNOWN_MAGIC));
     // 暗影玫瑰
     public static final Holder<ArmorMaterial> SHADOW_ROSE = register("shadow_rose", Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 5); // 靴子
         map.put(ArmorItem.Type.LEGGINGS, 8); // 护腿
         map.put(ArmorItem.Type.CHESTPLATE, 10); // 盔甲
         map.put(ArmorItem.Type.HELMET, 5); // 头盔
-    }), 22, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.15F, () -> Ingredient.of(ModItemTags.INGOT_SHADOW_ROSE));
+    }), 22, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.15F, () -> Ingredient.of(ModItemTags.INGOTS_SHADOW_ROSE));
     // 星以合金
     public static final Holder<ArmorMaterial> STAR_ETHER_ALLOY = register("star_ether_alloy", Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 6); // 靴子
         map.put(ArmorItem.Type.LEGGINGS, 10); // 护腿
         map.put(ArmorItem.Type.CHESTPLATE, 12); // 盔甲
         map.put(ArmorItem.Type.HELMET, 6); // 头盔
-    }), 30, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.25F, () -> Ingredient.of(ModItemTags.INGOT_STAR_ETHER_ALLOY));
+    }), 30, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.25F, () -> Ingredient.of(ModItemTags.INGOTS_STAR_ETHER_ALLOY));
 
     private static Holder<ArmorMaterial> register(
             String name,

@@ -1,7 +1,6 @@
 package com.chinaex123.ifmup.data;
 
 import com.chinaex123.ifmup.IndustrialForegoingMoreUpgradePlugins;
-import com.chinaex123.ifmup.init.ModBlockTags;
 import com.chinaex123.ifmup.init.ModBlocks;
 import com.chinaex123.ifmup.init.ModItemTags;
 import com.chinaex123.ifmup.init.ModItems;
@@ -76,38 +75,38 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
 
         // 暗影 - 锭/粒/齿轮/板/粉/棍/线
-        this.tag(ModItemTags.INGOT_SHADOW).add(ModItems.SHADOW.INGOT.get());
-        this.tag(ModItemTags.NUGGET_SHADOW).add(ModItems.SHADOW.NUGGET.get());
-        this.tag(ModItemTags.GEAR_SHADOW).add(ModItems.SHADOW.GEAR.get());
-        this.tag(ModItemTags.DUST_SHADOW).add(ModItems.SHADOW.DUST.get());
-        this.tag(ModItemTags.PLATE_SHADOW).add(ModItems.SHADOW.PLATE.get());
-        this.tag(ModItemTags.ROD_SHADOW).add(ModItems.SHADOW.ROD.get());
-        this.tag(ModItemTags.WIRE_SHADOW).add(ModItems.SHADOW.WIRE.get());
+        this.tag(ModItemTags.INGOTS_SHADOW).add(ModItems.SHADOW.INGOT.get());
+        this.tag(ModItemTags.NUGGETS_SHADOW).add(ModItems.SHADOW.NUGGET.get());
+        this.tag(ModItemTags.GEARS_SHADOW).add(ModItems.SHADOW.GEAR.get());
+        this.tag(ModItemTags.DUSTS_SHADOW).add(ModItems.SHADOW.DUST.get());
+        this.tag(ModItemTags.PLATES_SHADOW).add(ModItems.SHADOW.PLATE.get());
+        this.tag(ModItemTags.RODS_SHADOW).add(ModItems.SHADOW.ROD.get());
+        this.tag(ModItemTags.WIRES_SHADOW).add(ModItems.SHADOW.WIRE.get());
         this.tag(ModItemTags.RAW_MATERIALS_SHADOW).add(ModItems.SHADOW.RAW.get());
         // 未知魔法 - 锭/粒/齿轮/板/粉/棍/线
-        this.tag(ModItemTags.INGOT_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.INGOT.get());
-        this.tag(ModItemTags.NUGGET_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.NUGGET.get());
-        this.tag(ModItemTags.GEAR_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.GEAR.get());
-        this.tag(ModItemTags.DUST_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.DUST.get());
-        this.tag(ModItemTags.PLATE_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.PLATE.get());
-        this.tag(ModItemTags.ROD_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.ROD.get());
-        this.tag(ModItemTags.WIRE_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.WIRE.get());
+        this.tag(ModItemTags.INGOTS_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.INGOT.get());
+        this.tag(ModItemTags.NUGGETS_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.NUGGET.get());
+        this.tag(ModItemTags.GEARS_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.GEAR.get());
+        this.tag(ModItemTags.DUSTS_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.DUST.get());
+        this.tag(ModItemTags.PLATES_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.PLATE.get());
+        this.tag(ModItemTags.RODS_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.ROD.get());
+        this.tag(ModItemTags.WIRES_UNKNOWN_MAGIC).add(ModItems.UNKNOWN_MAGIC.WIRE.get());
         // 暗影玫瑰 - 锭/粒/齿轮/板/粉/棍/线
-        this.tag(ModItemTags.INGOT_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.INGOT.get());
-        this.tag(ModItemTags.NUGGET_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.NUGGET.get());
-        this.tag(ModItemTags.GEAR_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.GEAR.get());
-        this.tag(ModItemTags.DUST_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.DUST.get());
-        this.tag(ModItemTags.PLATE_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.PLATE.get());
-        this.tag(ModItemTags.ROD_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.ROD.get());
-        this.tag(ModItemTags.WIRE_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.WIRE.get());
+        this.tag(ModItemTags.INGOTS_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.INGOT.get());
+        this.tag(ModItemTags.NUGGETS_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.NUGGET.get());
+        this.tag(ModItemTags.GEARS_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.GEAR.get());
+        this.tag(ModItemTags.DUSTS_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.DUST.get());
+        this.tag(ModItemTags.PLATES_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.PLATE.get());
+        this.tag(ModItemTags.RODS_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.ROD.get());
+        this.tag(ModItemTags.WIRES_SHADOW_ROSE).add(ModItems.SHADOW_ROSE.WIRE.get());
         // 星以合金 - 锭/粒/齿轮/板/粉/棍/线
-        this.tag(ModItemTags.INGOT_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.INGOT.get());
-        this.tag(ModItemTags.NUGGET_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.NUGGET.get());
-        this.tag(ModItemTags.GEAR_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.GEAR.get());
-        this.tag(ModItemTags.DUST_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.DUST.get());
-        this.tag(ModItemTags.PLATE_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.PLATE.get());
-        this.tag(ModItemTags.ROD_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.ROD.get());
-        this.tag(ModItemTags.WIRE_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.WIRE.get());
+        this.tag(ModItemTags.INGOTS_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.INGOT.get());
+        this.tag(ModItemTags.NUGGETS_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.NUGGET.get());
+        this.tag(ModItemTags.GEARS_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.GEAR.get());
+        this.tag(ModItemTags.DUSTS_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.DUST.get());
+        this.tag(ModItemTags.PLATES_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.PLATE.get());
+        this.tag(ModItemTags.RODS_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.ROD.get());
+        this.tag(ModItemTags.WIRES_STAR_ETHER_ALLOY).add(ModItems.STAR_ETHER_ALLOY.WIRE.get());
 
 
         // 矿物块

@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "A": {
-      "tag": "c:ingot/unknown_magic"
+      "tag": "c:ingots/unknown_magic"
     }
   },
   "pattern": [

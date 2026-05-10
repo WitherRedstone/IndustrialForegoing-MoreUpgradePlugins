@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot/star_ether_alloy": {
+    "has_ingots/star_ether_alloy": {
       "conditions": {
         "items": [
           {
-            "items": "#c:ingot/star_ether_alloy"
+            "items": "#c:ingots/star_ether_alloy"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ingot/star_ether_alloy"
+      "has_ingots/star_ether_alloy"
     ]
   ],
   "rewards": {

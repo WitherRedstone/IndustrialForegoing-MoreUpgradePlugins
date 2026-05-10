@@ -8,16 +8,16 @@
   "type": "industrialforegoing:dissolution_chamber",
   "input": [
     {
-      "tag": "c:ingot/shadow"
+      "tag": "c:ingots/shadow"
     },
     {
-      "tag": "c:ingot/shadow"
+      "tag": "c:ingots/shadow"
     },
     {
-      "tag": "c:ingot/shadow"
+      "tag": "c:ingots/shadow"
     },
     {
-      "tag": "c:ingot/shadow"
+      "tag": "c:ingots/shadow"
     },
     {
       "item": "minecraft:wither_rose"

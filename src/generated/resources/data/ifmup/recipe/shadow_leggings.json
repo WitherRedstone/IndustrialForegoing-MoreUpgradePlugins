@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "A": {
-      "tag": "c:ingot/shadow"
+      "tag": "c:ingots/shadow"
     }
   },
   "pattern": [

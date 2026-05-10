@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:gear/shadow"
+            "items": "#c:gears/shadow"
           }
         ]
       },

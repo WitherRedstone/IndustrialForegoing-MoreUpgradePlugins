@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ingot/unknown_magic": {
+    "has_ingots/unknown_magic": {
       "conditions": {
         "items": [
           {
-            "items": "#c:ingot/unknown_magic"
+            "items": "#c:ingots/unknown_magic"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_ingot/unknown_magic"
+      "has_ingots/unknown_magic"
     ]
   ],
   "rewards": {

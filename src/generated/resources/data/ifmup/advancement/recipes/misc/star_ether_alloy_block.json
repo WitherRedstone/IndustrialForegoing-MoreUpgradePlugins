@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:ingot/star_ether_alloy"
+            "items": "#c:ingots/star_ether_alloy"
           }
         ]
       },

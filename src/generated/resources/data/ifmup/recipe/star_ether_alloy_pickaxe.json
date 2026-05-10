@@ -3,10 +3,10 @@
   "category": "equipment",
   "key": {
     "A": {
-      "tag": "c:ingot/star_ether_alloy"
+      "tag": "c:ingots/star_ether_alloy"
     },
     "B": {
-      "tag": "c:rod/star_ether_alloy"
+      "tag": "c:rods/star_ether_alloy"
     }
   },
   "pattern": [

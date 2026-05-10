@@ -13,52 +13,52 @@ public interface ModItemTags {
     TagKey<Item> DUSTS = neoforgeItemTag("dusts"); // c:dusts
     TagKey<Item> PLATES = neoforgeItemTag("plates"); // c:plates
     TagKey<Item> RODS = neoforgeItemTag("rods"); // c:rods
-    TagKey<Item> WIRES = neoforgeItemTag("wires"); // c:wire/wires
+    TagKey<Item> WIRES = neoforgeItemTag("wires"); // c:wires/wires
     TagKey<Item> STORAGE_BLOCKS = neoforgeItemTag("storage_blocks"); // c:storage_blocks
     TagKey<Item> RAW_MATERIALS = neoforgeItemTag("raw_materials"); // c:raw_materials
 
 
-    TagKey<Item> GEAR_NETHERITE_GEAR = neoforgeItemTag("gear/netherite"); // c:gear/netherite
-    TagKey<Item> GEAR_NETHER_STAR_GEAR = neoforgeItemTag("gear/nether_star"); // c:gear/nether_star
+    TagKey<Item> GEAR_NETHERITE_GEAR = neoforgeItemTag("gears/netherite"); // c:gears/netherite
+    TagKey<Item> GEAR_NETHER_STAR_GEAR = neoforgeItemTag("gears/nether_star"); // c:gears/nether_star
 
     // 暗影
-    TagKey<Item> INGOT_SHADOW = neoforgeItemTag("ingot/shadow"); // c:ingot/shadow
-    TagKey<Item> NUGGET_SHADOW = neoforgeItemTag("nugget/shadow"); // c:nugget/shadow
-    TagKey<Item> GEAR_SHADOW = neoforgeItemTag("gear/shadow"); // c:gear/shadow
-    TagKey<Item> DUST_SHADOW = neoforgeItemTag("dust/shadow"); // c:dust/shadow
-    TagKey<Item> PLATE_SHADOW = neoforgeItemTag("plate/shadow"); // c:plate/shadow
-    TagKey<Item> ROD_SHADOW = neoforgeItemTag("rod/shadow"); // c:rod/shadow
-    TagKey<Item> WIRE_SHADOW = neoforgeItemTag("wire/shadow"); // c:wire/shadow
+    TagKey<Item> INGOTS_SHADOW = neoforgeItemTag("ingots/shadow"); // c:ingots/shadow
+    TagKey<Item> NUGGETS_SHADOW = neoforgeItemTag("nuggets/shadow"); // c:nuggets/shadow
+    TagKey<Item> GEARS_SHADOW = neoforgeItemTag("gears/shadow"); // c:gears/shadow
+    TagKey<Item> DUSTS_SHADOW = neoforgeItemTag("dusts/shadow"); // c:dusts/shadow
+    TagKey<Item> PLATES_SHADOW = neoforgeItemTag("plates/shadow"); // c:plates/shadow
+    TagKey<Item> RODS_SHADOW = neoforgeItemTag("rods/shadow"); // c:rods/shadow
+    TagKey<Item> WIRES_SHADOW = neoforgeItemTag("wires/shadow"); // c:wires/shadow
     TagKey<Item> RAW_MATERIALS_SHADOW = neoforgeItemTag("raw_materials/shadow"); // c:raw_materials/shadow
     TagKey<Item> STORAGE_BLOCKS_SHADOW = neoforgeItemTag("storage_blocks/shadow"); // c:storage_blocks/shadow
     TagKey<Item> STORAGE_BLOCKS_RAW_SHADOW = neoforgeItemTag("storage_blocks/raw_shadow"); // c:storage_blocks/raw_shadow
-    TagKey<Item> ORES_SHADOW = neoforgeItemTag("ore/shadow"); // c:ore/shadow
+    TagKey<Item> ORES_SHADOW = neoforgeItemTag("ores/shadow"); // c:ores/shadow
     // 暗影玫瑰
-    TagKey<Item> INGOT_SHADOW_ROSE = neoforgeItemTag("ingot/shadow_rose"); // c:ingot/shadow_rose
-    TagKey<Item> NUGGET_SHADOW_ROSE = neoforgeItemTag("nugget/shadow_rose"); // c:nugget/shadow_rose
-    TagKey<Item> GEAR_SHADOW_ROSE = neoforgeItemTag("gear/shadow_rose"); // c:gear/shadow_rose
-    TagKey<Item> DUST_SHADOW_ROSE = neoforgeItemTag("dust/shadow_rose"); // c:dust/shadow_rose
-    TagKey<Item> PLATE_SHADOW_ROSE = neoforgeItemTag("plate/shadow_rose"); // c:plate/shadow_rose
-    TagKey<Item> ROD_SHADOW_ROSE = neoforgeItemTag("rod/shadow_rose"); // c:rod/shadow_rose
-    TagKey<Item> WIRE_SHADOW_ROSE = neoforgeItemTag("wire/shadow_rose"); // c:wire/shadow_rose
+    TagKey<Item> INGOTS_SHADOW_ROSE = neoforgeItemTag("ingots/shadow_rose"); // c:ingots/shadow_rose
+    TagKey<Item> NUGGETS_SHADOW_ROSE = neoforgeItemTag("nuggets/shadow_rose"); // c:nuggets/shadow_rose
+    TagKey<Item> GEARS_SHADOW_ROSE = neoforgeItemTag("gears/shadow_rose"); // c:gears/shadow_rose
+    TagKey<Item> DUSTS_SHADOW_ROSE = neoforgeItemTag("dusts/shadow_rose"); // c:dusts/shadow_rose
+    TagKey<Item> PLATES_SHADOW_ROSE = neoforgeItemTag("plates/shadow_rose"); // c:plates/shadow_rose
+    TagKey<Item> RODS_SHADOW_ROSE = neoforgeItemTag("rods/shadow_rose"); // c:rods/shadow_rose
+    TagKey<Item> WIRES_SHADOW_ROSE = neoforgeItemTag("wires/shadow_rose"); // c:wires/shadow_rose
     TagKey<Item> STORAGE_BLOCKS_SHADOW_ROSE = neoforgeItemTag("storage_blocks/shadow_rose"); // c:storage_blocks/shadow_rose
     // 未知魔法
-    TagKey<Item> INGOT_UNKNOWN_MAGIC = neoforgeItemTag("ingot/unknown_magic"); // c:ingot/unknown_magic
-    TagKey<Item> NUGGET_UNKNOWN_MAGIC = neoforgeItemTag("nugget/unknown_magic"); // c:nugget/unknown_magic
-    TagKey<Item> GEAR_UNKNOWN_MAGIC = neoforgeItemTag("gear/unknown_magic"); // c:gear/unknown_magic
-    TagKey<Item> DUST_UNKNOWN_MAGIC = neoforgeItemTag("dust/unknown_magic"); // c:dust/unknown_magic
-    TagKey<Item> PLATE_UNKNOWN_MAGIC = neoforgeItemTag("plate/unknown_magic"); // c:plate/unknown_magic
-    TagKey<Item> ROD_UNKNOWN_MAGIC = neoforgeItemTag("rod/unknown_magic"); // c:rod/unknown_magic
-    TagKey<Item> WIRE_UNKNOWN_MAGIC = neoforgeItemTag("wire/unknown_magic"); // c:wire/unknown_magic
+    TagKey<Item> INGOTS_UNKNOWN_MAGIC = neoforgeItemTag("ingots/unknown_magic"); // c:ingots/unknown_magic
+    TagKey<Item> NUGGETS_UNKNOWN_MAGIC = neoforgeItemTag("nuggets/unknown_magic"); // c:nuggets/unknown_magic
+    TagKey<Item> GEARS_UNKNOWN_MAGIC = neoforgeItemTag("gears/unknown_magic"); // c:gears/unknown_magic
+    TagKey<Item> DUSTS_UNKNOWN_MAGIC = neoforgeItemTag("dusts/unknown_magic"); // c:dusts/unknown_magic
+    TagKey<Item> PLATES_UNKNOWN_MAGIC = neoforgeItemTag("plates/unknown_magic"); // c:plates/unknown_magic
+    TagKey<Item> RODS_UNKNOWN_MAGIC = neoforgeItemTag("rods/unknown_magic"); // c:rods/unknown_magic
+    TagKey<Item> WIRES_UNKNOWN_MAGIC = neoforgeItemTag("wires/unknown_magic"); // c:wires/unknown_magic
     TagKey<Item> STORAGE_BLOCKS_UNKNOWN_MAGIC = neoforgeItemTag("storage_blocks/unknown_magic"); // c:storage_blocks/unknown_magic
     // 星以合金
-    TagKey<Item> INGOT_STAR_ETHER_ALLOY = neoforgeItemTag("ingot/star_ether_alloy"); // c:ingot/star_ether_alloy
-    TagKey<Item> NUGGET_STAR_ETHER_ALLOY = neoforgeItemTag("nugget/star_ether_alloy"); // c:nugget/star_ether_alloy
-    TagKey<Item> GEAR_STAR_ETHER_ALLOY = neoforgeItemTag("gear/star_ether_alloy"); // c:gear/star_ether_alloy
-    TagKey<Item> DUST_STAR_ETHER_ALLOY = neoforgeItemTag("dust/star_ether_alloy"); // c:dust/star_ether_alloy
-    TagKey<Item> PLATE_STAR_ETHER_ALLOY = neoforgeItemTag("plate/star_ether_alloy"); // c:plate/star_ether_alloy
-    TagKey<Item> ROD_STAR_ETHER_ALLOY = neoforgeItemTag("rod/star_ether_alloy"); // c:rod/star_ether_alloy
-    TagKey<Item> WIRE_STAR_ETHER_ALLOY = neoforgeItemTag("wire/star_ether_alloy"); // c:wire/star_ether_alloy
+    TagKey<Item> INGOTS_STAR_ETHER_ALLOY = neoforgeItemTag("ingots/star_ether_alloy"); // c:ingots/star_ether_alloy
+    TagKey<Item> NUGGETS_STAR_ETHER_ALLOY = neoforgeItemTag("nuggets/star_ether_alloy"); // c:nuggets/star_ether_alloy
+    TagKey<Item> GEARS_STAR_ETHER_ALLOY = neoforgeItemTag("gears/star_ether_alloy"); // c:gears/star_ether_alloy
+    TagKey<Item> DUSTS_STAR_ETHER_ALLOY = neoforgeItemTag("dusts/star_ether_alloy"); // c:dusts/star_ether_alloy
+    TagKey<Item> PLATES_STAR_ETHER_ALLOY = neoforgeItemTag("plates/star_ether_alloy"); // c:plates/star_ether_alloy
+    TagKey<Item> RODS_STAR_ETHER_ALLOY = neoforgeItemTag("rods/star_ether_alloy"); // c:rods/star_ether_alloy
+    TagKey<Item> WIRES_STAR_ETHER_ALLOY = neoforgeItemTag("wires/star_ether_alloy"); // c:wires/star_ether_alloy
     TagKey<Item> STORAGE_BLOCKS_STAR_ETHER_ALLOY = neoforgeItemTag("storage_blocks/star_ether_alloy"); // c:storage_blocks/star_ether_alloy
 
 
