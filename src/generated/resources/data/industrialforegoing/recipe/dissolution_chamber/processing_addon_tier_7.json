@@ -14,10 +14,10 @@
       "tag": "c:dusts/redstone"
     },
     {
-      "item": "minecraft:glass_bottle"
+      "tag": "c:glass_panes"
     },
     {
-      "item": "minecraft:glass_bottle"
+      "tag": "c:glass_panes"
     },
     {
       "tag": "c:gears/nether_star"

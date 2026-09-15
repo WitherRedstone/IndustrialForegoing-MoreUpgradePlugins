@@ -15,13 +15,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class IFMUPBlocks {
     public static final DeferredRegister.Blocks BLOCK_REGISTER =
             DeferredRegister.createBlocks(IndustrialForegoingMoreUpgradePlugins.MOD_ID);
 
     // 黯曜
     public static final DeferredBlock<LiquidBlock> DARKSHINE_FLUID =
-            BLOCK_REGISTER.register("darkshine", () -> new LiquidBlock(ModFluids.DARKSHINE.get(), BlockBehaviour.Properties.of()
+            BLOCK_REGISTER.register("darkshine", () -> new LiquidBlock(IFMUPFluids.DARKSHINE.get(), BlockBehaviour.Properties.of()
                     .noLootTable() // 不掉落
                     .liquid() // 液体
                     .replaceable() // 可替换
@@ -58,7 +58,7 @@ public class ModBlocks {
 
 
     public static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block, Rarity rarity) {
-        ModItems.ITEMS_REGISTER.register(name, () -> new BlockItem(block.get(), new Item.Properties().rarity(rarity)));
+        IFMUPItems.ITEMS_REGISTER.register(name, () -> new BlockItem(block.get(), new Item.Properties().rarity(rarity)));
     }
 
     public static <T extends Block> DeferredBlock<T> registerBlocks(String name, Supplier<T> block, Rarity rarity) {

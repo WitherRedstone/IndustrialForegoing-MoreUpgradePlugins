@@ -5,7 +5,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public interface ModItemTags {
+public interface IFMUPItemTags {
 
     TagKey<Item> INGOTS = neoforgeItemTag("ingots"); // c:ingots
     TagKey<Item> NUGGETS = neoforgeItemTag("nuggets"); // c:nuggets

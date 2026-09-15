@@ -25,7 +25,7 @@
       "biome_filter": {
         "blacklist": [],
         "whitelist": [
-          "minecraft:has_structure/ancient_city"
+          "ifmup:deep_dark"
         ]
       },
       "depth_max": -16,

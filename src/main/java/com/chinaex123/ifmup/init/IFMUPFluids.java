@@ -11,7 +11,7 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import java.util.function.Supplier;
 
-public class ModFluids {
+public class IFMUPFluids {
     public static final DeferredRegister<FluidType> FLUID_TYPES = DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, IndustrialForegoingMoreUpgradePlugins.MOD_ID);
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(BuiltInRegistries.FLUID, IndustrialForegoingMoreUpgradePlugins.MOD_ID);
 
@@ -21,15 +21,15 @@ public class ModFluids {
 
     // ==================== 流体ID ====================
     // 黯曜
-    public static final ResourceLocation DARKSHINE_ID = ModFluids.id("darkshine");
-    public static final ResourceLocation FLOWING_DARKSHINE_ID = ModFluids.id("flowing_darkshine");
+    public static final ResourceLocation DARKSHINE_ID = IFMUPFluids.id("darkshine");
+    public static final ResourceLocation FLOWING_DARKSHINE_ID = IFMUPFluids.id("flowing_darkshine");
 
 
     // ==================== 流体属性 ====================
     // 参数：流体 ID，掉落伤害，光亮等级，滋润耕地，无限生成
     // 黯曜
     public static final Supplier<FluidType> DARKSHINE_TYPE =
-            FLUID_TYPES.register("darkshine", () -> new ModFluidTypes(DARKSHINE_ID, 0, 3, false, false));
+            FLUID_TYPES.register("darkshine", () -> new IFMUPFluidTypes(DARKSHINE_ID, 0, 3, false, false));
 
 
     // ==================== 流体 属性 ====================
@@ -39,9 +39,9 @@ public class ModFluids {
     // ==================== 流体 物理和行为====================
     // 黯曜
     public static final Supplier<BaseFlowingFluid.Source> DARKSHINE =
-            FLUIDS.register("darkshine", () -> new BaseFlowingFluid.Source(ModFluids.DARKSHINE_PROPERTIES));
+            FLUIDS.register("darkshine", () -> new BaseFlowingFluid.Source(IFMUPFluids.DARKSHINE_PROPERTIES));
     public static final Supplier<BaseFlowingFluid.Flowing> FLOWING_DARKSHINE =
-            FLUIDS.register("flowing_darkshine", () -> new BaseFlowingFluid.Flowing(ModFluids.DARKSHINE_PROPERTIES));
+            FLUIDS.register("flowing_darkshine", () -> new BaseFlowingFluid.Flowing(IFMUPFluids.DARKSHINE_PROPERTIES));
 
 
     static {
@@ -51,8 +51,8 @@ public class ModFluids {
                 DARKSHINE_TYPE,
                 DARKSHINE,
                 FLOWING_DARKSHINE
-        ).bucket(ModItems.DARKSHINE_BUCKET)
-                .block(ModBlocks.DARKSHINE_FLUID)
+        ).bucket(IFMUPItems.DARKSHINE_BUCKET)
+                .block(IFMUPBlocks.DARKSHINE_FLUID)
                 .explosionResistance(100.0F) // 抗爆性
                 .slopeFindDistance(4) // 流动查找距离
                 .levelDecreasePerBlock(1) // 液面下降等级

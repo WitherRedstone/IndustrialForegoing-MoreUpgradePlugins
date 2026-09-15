@@ -1,7 +1,7 @@
 package com.chinaex123.ifmup.fluid;
 
 import com.chinaex123.ifmup.IndustrialForegoingMoreUpgradePlugins;
-import com.chinaex123.ifmup.init.ModFluids;
+import com.chinaex123.ifmup.init.IFMUPFluids;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -22,8 +22,8 @@ public class Darkshine {
         if (level.isClientSide()) return;
 
         BlockPos pos = player.blockPosition();
-        boolean isInDarkshine = level.getFluidState(pos).is(ModFluids.DARKSHINE.get()) ||
-                level.getFluidState(pos).is(ModFluids.FLOWING_DARKSHINE.get());
+        boolean isInDarkshine = level.getFluidState(pos).is(IFMUPFluids.DARKSHINE.get()) ||
+                level.getFluidState(pos).is(IFMUPFluids.FLOWING_DARKSHINE.get());
 
         if (isInDarkshine) {
             player.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 20 * 5, 0));

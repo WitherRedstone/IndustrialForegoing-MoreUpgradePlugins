@@ -16,12 +16,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Consumer;
 
-public class ModFluidTypes extends FluidType {
+public class IFMUPFluidTypes extends FluidType {
     private final ResourceLocation id;
     private final ResourceLocation stillTexture;
     private final ResourceLocation flowingTexture;
 
-    public ModFluidTypes(ResourceLocation id, FluidType.Properties properties) {
+    public IFMUPFluidTypes(ResourceLocation id, FluidType.Properties properties) {
         super(properties);
         this.id = id;
         this.stillTexture = ResourceLocation.fromNamespaceAndPath(this.id.getNamespace(), "block/%s_still".formatted(id.getPath()));
@@ -29,7 +29,7 @@ public class ModFluidTypes extends FluidType {
     }
 
     // 参数：流体 ID，掉落伤害，光亮等级，滋润耕地，无限生成
-    public ModFluidTypes(ResourceLocation id, float Distance, int lightLevel, boolean canHydrate, boolean ConvertToSource) {
+    public IFMUPFluidTypes(ResourceLocation id, float Distance, int lightLevel, boolean canHydrate, boolean ConvertToSource) {
         this(id, Properties.create()
                 .descriptionId(Util.makeDescriptionId("block", id)) // 设置流体的本地化名称 Key
                 .fallDistanceModifier(Distance) // 掉落伤害修正
@@ -58,11 +58,11 @@ public class ModFluidTypes extends FluidType {
     public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
         consumer.accept(new IClientFluidTypeExtensions() {
             public @NotNull ResourceLocation getStillTexture() {
-                return ModFluidTypes.this.stillTexture;
+                return IFMUPFluidTypes.this.stillTexture;
             }
 
             public @NotNull ResourceLocation getFlowingTexture() {
-                return ModFluidTypes.this.flowingTexture;
+                return IFMUPFluidTypes.this.flowingTexture;
             }
         });
     }

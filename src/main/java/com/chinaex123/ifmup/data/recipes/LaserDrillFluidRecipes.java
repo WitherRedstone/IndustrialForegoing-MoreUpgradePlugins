@@ -3,7 +3,8 @@ package com.chinaex123.ifmup.data.recipes;
 import com.buuz135.industrial.recipe.LaserDrillFluidRecipe;
 import com.buuz135.industrial.recipe.LaserDrillRarity;
 import com.buuz135.industrial.recipe.data.EntityData;
-import com.chinaex123.ifmup.init.ModFluids;
+import com.chinaex123.ifmup.init.IFMUPBiomeTags;
+import com.chinaex123.ifmup.init.IFMUPFluids;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
@@ -11,9 +12,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
-import net.minecraft.world.level.material.Fluids;
 import net.neoforged.neoforge.fluids.crafting.FluidIngredient;
 import net.neoforged.neoforge.fluids.crafting.SizedFluidIngredient;
 import org.jetbrains.annotations.NotNull;
@@ -37,17 +36,19 @@ public class LaserDrillFluidRecipes {
         // 黯曜
         LaserDrillFluidRecipe.createRecipe(recipeOutput, "darkshine", "ifmup", new LaserDrillFluidRecipe(
                 // 输出物品，数量，颜色，实体数据
-                new SizedFluidIngredient(FluidIngredient.of(ModFluids.DARKSHINE.get()), 10), 11, Optional.of(EntityData.of(EntityType.WARDEN)),
+                new SizedFluidIngredient(FluidIngredient.of(IFMUPFluids.DARKSHINE.get()), 10), 11, Optional.of(EntityData.of(EntityType.WARDEN)),
                 // 生成条件
                 new LaserDrillRarity(
                         new LaserDrillRarity.BiomeRarity(  // 生物群系要求
-                                List.of(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:has_structure/ancient_city"))),
+//                                List.of(TagKey.create(Registries.BIOME, ResourceLocation.parse("ifmup:deep_dark"))),
+                                List.of(IFMUPBiomeTags.DEEP_DARK),
                                 List.of()  // 黑名单
                         ),
                         new LaserDrillRarity.DimensionRarity(List.of(BuiltinDimensionTypes.OVERWORLD), List.of()),  // 维度要求
                         -64, -16, 8 // 最小Y坐标，最大Y坐标，权重
                 ))
         );
+
 
         /*
           0 白色 (White)

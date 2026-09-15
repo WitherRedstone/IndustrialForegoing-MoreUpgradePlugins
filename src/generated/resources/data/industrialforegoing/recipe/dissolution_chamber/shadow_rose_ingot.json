@@ -33,7 +33,7 @@
     }
   ],
   "inputFluid": {
-    "amount": 500,
+    "amount": 250,
     "fluid": "industrialforegoing:sludge"
   },
   "output": {

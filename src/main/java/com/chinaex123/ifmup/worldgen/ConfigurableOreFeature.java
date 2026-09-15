@@ -1,6 +1,6 @@
 package com.chinaex123.ifmup.worldgen;
 
-import com.chinaex123.ifmup.config.ServerConfig;
+import com.chinaex123.ifmup.config.IFMUPServerConfig;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
@@ -27,15 +27,15 @@ public class ConfigurableOreFeature extends Feature<ConfigurableOreFeature.Confi
         int veinSize, veinCount, minHeight, maxHeight;
 
         if (blockName.contains("nether_shadow")) {
-            veinSize = ServerConfig.NETHER_SHADOW_ORE_VEIN_SIZE.get();
-            veinCount = ServerConfig.NETHER_SHADOW_ORE_VEIN_COUNT.get();
-            minHeight = ServerConfig.NETHER_SHADOW_ORE_MIN_HEIGHT.get();
-            maxHeight = ServerConfig.NETHER_SHADOW_ORE_MAX_HEIGHT.get();
+            veinSize = IFMUPServerConfig.NETHER_SHADOW_ORE_VEIN_SIZE.get();
+            veinCount = IFMUPServerConfig.NETHER_SHADOW_ORE_VEIN_COUNT.get();
+            minHeight = IFMUPServerConfig.NETHER_SHADOW_ORE_MIN_HEIGHT.get();
+            maxHeight = IFMUPServerConfig.NETHER_SHADOW_ORE_MAX_HEIGHT.get();
         } else {
-            veinSize = ServerConfig.UNKNOWN_BLOCK_VEIN_SIZE.get();
-            veinCount = ServerConfig.UNKNOWN_BLOCK_VEIN_COUNT.get();
-            minHeight = ServerConfig.UNKNOWN_BLOCK_MIN_HEIGHT.get();
-            maxHeight = ServerConfig.UNKNOWN_BLOCK_MAX_HEIGHT.get();
+            veinSize = IFMUPServerConfig.UNKNOWN_BLOCK_VEIN_SIZE.get();
+            veinCount = IFMUPServerConfig.UNKNOWN_BLOCK_VEIN_COUNT.get();
+            minHeight = IFMUPServerConfig.UNKNOWN_BLOCK_MIN_HEIGHT.get();
+            maxHeight = IFMUPServerConfig.UNKNOWN_BLOCK_MAX_HEIGHT.get();
         }
 
         if (veinCount <= 0 || veinSize <= 0) {

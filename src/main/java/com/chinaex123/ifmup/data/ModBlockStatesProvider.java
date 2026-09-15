@@ -1,7 +1,7 @@
 package com.chinaex123.ifmup.data;
 
 import com.chinaex123.ifmup.IndustrialForegoingMoreUpgradePlugins;
-import com.chinaex123.ifmup.init.ModBlocks;
+import com.chinaex123.ifmup.init.IFMUPBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -15,16 +15,16 @@ public class ModBlockStatesProvider extends BlockStateProvider {
 
     protected void registerStatesAndModels() {
         // -------------------- 暗影 --------------------
-        basicMaterialBlock(ModBlocks.SHADOW_BLOCK);
-        rawMaterialBlock(ModBlocks.RAW_SHADOW_BLOCK);
-        oreBlock(ModBlocks.NETHER_SHADOW_ORE);
+        basicMaterialBlock(IFMUPBlocks.SHADOW_BLOCK);
+        rawMaterialBlock(IFMUPBlocks.RAW_SHADOW_BLOCK);
+        oreBlock(IFMUPBlocks.NETHER_SHADOW_ORE);
         // -------------------- 暗影玫瑰 --------------------
-        basicMaterialBlock(ModBlocks.SHADOW_ROSE_BLOCK);
+        basicMaterialBlock(IFMUPBlocks.SHADOW_ROSE_BLOCK);
         // -------------------- 未知魔法 --------------------
-        basicOtherMaterialBlock(ModBlocks.UNKNOWN_BLOCK);
-        basicMaterialBlock(ModBlocks.UNKNOWN_MAGIC_BLOCK);
+        basicOtherMaterialBlock(IFMUPBlocks.UNKNOWN_BLOCK);
+        basicMaterialBlock(IFMUPBlocks.UNKNOWN_MAGIC_BLOCK);
         // -------------------- 星以合金 --------------------
-        basicMaterialBlock(ModBlocks.STAR_ETHER_ALLOY_BLOCK);
+        basicMaterialBlock(IFMUPBlocks.STAR_ETHER_ALLOY_BLOCK);
     }
 
     /**

@@ -14,10 +14,10 @@
       "tag": "c:dusts/redstone"
     },
     {
-      "item": "minecraft:glass_bottle"
+      "tag": "c:glass_panes"
     },
     {
-      "item": "minecraft:glass_bottle"
+      "tag": "c:glass_panes"
     },
     {
       "tag": "c:gears/unknown_magic"
@@ -33,7 +33,7 @@
     }
   ],
   "inputFluid": {
-    "amount": 500,
+    "amount": 50,
     "fluid": "ifmup:darkshine"
   },
   "output": {
