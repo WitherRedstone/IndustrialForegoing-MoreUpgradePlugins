@@ -32,7 +32,9 @@ import java.util.List;
 public class ArmorEffect {
 
     /** 持续时间 */
-    private static final int BUFF_DURATION = 200;
+    private static final int BUFF_DURATION = 120;
+    /** 效果检测间隔（tick），20 = 每秒检测一次 */
+    private static final int TICK_INTERVAL = 60;
     /** 整套护甲要求的件数 */
     private static final int FULL_SET_SIZE = 4;
 
@@ -73,24 +75,26 @@ public class ArmorEffect {
         ItemStack mainHand = player.getMainHandItem();
         boolean isFullSet = countMatchingArmor(player) == FULL_SET_SIZE;
 
+        boolean shouldRefresh = player.tickCount % TICK_INTERVAL == 0;
+
         if (isFullSet) {
-            // 穿戴整套：给予生命恢复 II、抗性提升 I
-            player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, BUFF_DURATION, 1, false, false));
-            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, BUFF_DURATION, 0, false, false));
+            // 穿戴整套：立刻给予效果（身上没有时）或每秒刷新时长
+            if (shouldRefresh || !player.hasEffect(MobEffects.REGENERATION)) {
+                player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, BUFF_DURATION, 1, true, true));
+            }
+            if (shouldRefresh || !player.hasEffect(MobEffects.DAMAGE_RESISTANCE)) {
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, BUFF_DURATION, 0, true, true));
+            }
 
-            // 主手为剑时给予力量 I；否则移除
-            applyOrRemoveEffect(player, mainHand.is(STAR_ETHER_SWORD.get()),
+            applyOrRemoveEffect(player, mainHand.is(STAR_ETHER_SWORD.get()), shouldRefresh,
                     MobEffects.DAMAGE_BOOST, BUFF_DURATION, 0);
-
-            // 主手为镐时给予急迫 I；否则移除
-            applyOrRemoveEffect(player, mainHand.is(STAR_ETHER_PICKAXE.get()),
+            applyOrRemoveEffect(player, mainHand.is(STAR_ETHER_PICKAXE.get()), shouldRefresh,
                     MobEffects.DIG_SPEED, BUFF_DURATION, 0);
         } else {
-            // 未穿戴整套：移除所有由本套装提供的效果
-            player.removeEffect(MobEffects.REGENERATION);
-            player.removeEffect(MobEffects.DAMAGE_RESISTANCE);
-            player.removeEffect(MobEffects.DAMAGE_BOOST);
-            player.removeEffect(MobEffects.DIG_SPEED);
+            removeSetEffect(player, MobEffects.REGENERATION, 1);
+            removeSetEffect(player, MobEffects.DAMAGE_RESISTANCE, 0);
+            removeSetEffect(player, MobEffects.DAMAGE_BOOST, 0);
+            removeSetEffect(player, MobEffects.DIG_SPEED, 0);
         }
     }
 
@@ -196,7 +200,10 @@ public class ArmorEffect {
     }
 
     /**
-     * 条件性地给玩家添加或移除效果。
+     * 条件性地给玩家添加或移除由本套装提供的效果。
+     * <p>
+     * 添加时使用 ambient=true 标记，移除时只移除 ambient 的实例，
+     * 从而不会影响玩家从药水、信标等其他来源获得的同名效果。
      *
      * @param player      目标玩家
      * @param shouldApply 是否应该施加效果
@@ -204,11 +211,26 @@ public class ArmorEffect {
      * @param duration    持续时间（tick）
      * @param amplifier   效果等级（0 为 I 级）
      */
-    private static void applyOrRemoveEffect(Player player, boolean shouldApply,
+    private static void applyOrRemoveEffect(Player player, boolean shouldApply, boolean shouldRefresh,
                                             Holder<MobEffect> effect, int duration, int amplifier) {
-        if (shouldApply) {
-            player.addEffect(new MobEffectInstance(effect, duration, amplifier, false, false));
-        } else {
+        if (shouldApply && (shouldRefresh || !player.hasEffect(effect))) {
+            player.addEffect(new MobEffectInstance(effect, duration, amplifier, true, true));
+        } else if (!shouldApply) {
+            removeSetEffect(player, effect, amplifier);
+        }
+    }
+
+    /**
+     * 只移除由本套装添加的效果实例（ambient=true 且 amplifier 匹配），
+     * 不影响玩家从其他来源（药水、信标等）获得的同名效果。
+     *
+     * @param player    目标玩家
+     * @param effect    效果类型
+     * @param amplifier 本套装使用的 amplifier
+     */
+    private static void removeSetEffect(Player player, Holder<MobEffect> effect, int amplifier) {
+        MobEffectInstance instance = player.getEffect(effect);
+        if (instance != null && instance.isAmbient() && instance.getAmplifier() == amplifier) {
             player.removeEffect(effect);
         }
     }
