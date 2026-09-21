@@ -58,4 +58,4 @@ By contributing to this project, you agree that:
 ## Contact
 
 - Author: [ChinaEX123]
-- GitHub: [https://github.com/WitherRedstone/IndustrialForegoing-MoreUpgradePlugins]
+- GitHub: [Repository link](https://github.com/WitherRedstone/IndustrialForegoing-MoreUpgradePlugins)
